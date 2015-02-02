@@ -16,16 +16,8 @@
   },
   "licenses": [
     {
-      "type": "GNU",
-      "url": "https://github.com/alexander-emelyanov/Rates.AlgoTrading/blob/master/LICENSE-GNU"
-    },
-    {
-      "type": "GPL",
-      "url": "https://github.com/alexander-emelyanov/Rates.AlgoTrading/blob/master/LICENSE-GPL"
-    },
-    {
-      "type": "V2.0",
-      "url": "https://github.com/alexander-emelyanov/Rates.AlgoTrading/blob/master/LICENSE-V2.0"
+      "type": "GNU GPL V2.0",
+      "url": "https://github.com/alexander-emelyanov/Rates.Algotrading/blob/master/LICENSE"
     }
   ],
   "main": "lib/Rates.AlgoTrading",
