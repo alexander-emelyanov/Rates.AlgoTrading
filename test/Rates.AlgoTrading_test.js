@@ -23,14 +23,15 @@ var Rates_AlgoTrading = require('../lib/Rates.AlgoTrading.js');
 */
 
 exports['awesome'] = {
-  setUp: function(done) {
-    // setup here
-    done();
-  },
-  'no args': function(test) {
-    test.expect(1);
-    // tests here
-    test.equal(Rates_AlgoTrading.awesome(), 'awesome', 'should be awesome.');
-    test.done();
-  },
+    setUp: function(done) {
+        // setup here
+        done();
+    },
+    'no args': function(test) {
+        test.expect(2);
+        // tests here
+        test.equal(Rates_AlgoTrading.awesome(), 'awesome', 'should be awesome.');
+        test.equal(Rates_AlgoTrading.testMethod(), 'test value', 'should be test.');
+        test.done();
+    }
 };
