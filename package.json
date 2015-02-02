@@ -1,0 +1,45 @@
+{
+  "name": "Rates.AlgoTrading",
+  "description": "Source of exchange rates for algorithmic trade systems",
+  "version": "0.1.0",
+  "homepage": "https://github.com/alexander-emelyanov/Rates.AlgoTrading",
+  "author": {
+    "name": "Alexander Emelyanov",
+    "email": "alexander.emelyanov@outlook.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alexander-emelyanov/Rates.AlgoTrading.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexander-emelyanov/Rates.AlgoTrading/issues"
+  },
+  "licenses": [
+    {
+      "type": "GNU",
+      "url": "https://github.com/alexander-emelyanov/Rates.AlgoTrading/blob/master/LICENSE-GNU"
+    },
+    {
+      "type": "GPL",
+      "url": "https://github.com/alexander-emelyanov/Rates.AlgoTrading/blob/master/LICENSE-GPL"
+    },
+    {
+      "type": "V2.0",
+      "url": "https://github.com/alexander-emelyanov/Rates.AlgoTrading/blob/master/LICENSE-V2.0"
+    }
+  ],
+  "main": "lib/Rates.AlgoTrading",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.5"
+  },
+  "keywords": []
+}
