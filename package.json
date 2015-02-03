@@ -17,7 +17,7 @@
   "licenses": [
     {
       "type": "GNU GPL V2.0",
-      "url": "https://github.com/alexander-emelyanov/Rates.Algotrading/blob/master/LICENSE"
+      "url": "https://github.com/alexander-emelyanov/Rates.AlgoTrading/blob/master/LICENSE"
     }
   ],
   "main": "lib/Rates.AlgoTrading",
@@ -33,5 +33,10 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt": "~0.4.5"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "express": "~4.11.2",
+    "node-internal-pubsub": "~1.0.1",
+    "sockjs": "~0.3.12"
+  }
 }
