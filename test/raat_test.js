@@ -1,6 +1,6 @@
 'use strict';
 
-var Rates_AlgoTrading = require('../lib/Rates.AlgoTrading.js');
+var raat = require('../lib/raat.js');
 
 /*
   ======== A Handy Little Nodeunit Reference ========
@@ -30,8 +30,8 @@ exports['awesome'] = {
     'no args': function(test) {
         test.expect(2);
         // tests here
-        test.equal(Rates_AlgoTrading.awesome(), 'awesome', 'should be awesome.');
-        test.equal(Rates_AlgoTrading.testMethod(), 'test value', 'should be test.');
+        test.equal(raat.awesome(), 'awesome', 'should be awesome.');
+        test.equal(raat.testMethod(), 'test value', 'should be test.');
         test.done();
     }
 };
