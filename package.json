@@ -36,7 +36,7 @@
   "keywords": [],
   "dependencies": {
     "express": "~4.11.2",
-    "node-internal-pubsub": "~1.0.1",
+    "node-internal-pubsub": "^1.0.1",
     "redis": "^0.12.1",
     "sockjs": "~0.3.12",
     "ws": "^0.7.1"
