@@ -1,4 +1,4 @@
-# Rates.AlgoTrading [![Build Status](https://secure.travis-ci.org/reskator/Rates.AlgoTrading.png?branch=master)](http://travis-ci.org/reskator/Rates.AlgoTrading)
+# Rates.AlgoTrading [![Build Status](https://secure.travis-ci.org/alexander-emelyanov/Rates.AlgoTrading.png?branch=master)](http://travis-ci.org/alexander-emelyanov/Rates.AlgoTrading)
 
 Source of exchange rates for algorithmic trade systems
 
