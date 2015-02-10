@@ -1,8 +1,8 @@
 'use strict';
 
-var raat = require('../lib/raat.js').raat;
+var raat = require('../lib/raat.js').Raat;
 
-var raat_instance = new raat();
+var raatInstance = new raat();
 
 /*
   ======== A Handy Little Nodeunit Reference ========
@@ -32,8 +32,8 @@ exports['awesome'] = {
     'no args': function(test) {
         test.expect(2);
         // tests here
-        test.equal(raat_instance.awesome(), 'awesome', 'should be awesome.');
-        test.equal(raat_instance.testMethod(), 'test value', 'should be test.');
+        test.equal(raatInstance.awesome(), 'awesome', 'should be awesome.');
+        test.equal(raatInstance.testMethod(), 'test value', 'should be test.');
         test.done();
     }
 };
