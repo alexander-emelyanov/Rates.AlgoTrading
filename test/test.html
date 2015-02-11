@@ -2,7 +2,7 @@
 <script type="text/javascript">
 
 var connectionString = "ws://127.0.0.1:8002/raat/websocket";
-var clientsCount = 10000;
+var clientsCount = 256;
 var clients = [];
 
 function createClient(i){
@@ -28,7 +28,6 @@ function createClient(i){
 
 
 for(var i = 0; i < clientsCount; i++){
-	// console.log('Create client #' + i);
 	createClient(i);
 }
  
