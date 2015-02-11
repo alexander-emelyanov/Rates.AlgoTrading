@@ -2,6 +2,6 @@ var raat = require('./lib/raat');
 
 console.log("RAAT loaded");
 
-var raat_configuration = {};
+var raatConfiguration = {};
 
-var raat_instance = new raat.raat(raat_configuration);
+var raatInstance = new raat.Raat(raatConfiguration);

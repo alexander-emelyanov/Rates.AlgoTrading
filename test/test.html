@@ -1,0 +1,35 @@
+<html></html>
+<script type="text/javascript">
+
+var connectionString = "ws://127.0.0.1:8002/raat/websocket";
+var clientsCount = 10000;
+var clients = [];
+
+function createClient(i){
+
+	clients[i] = new WebSocket(connectionString);
+
+	clients[i].onopen = function() {
+		console.log("Connection opened...");
+	};
+
+	clients[i].onclose = function() {
+		console.log("Connection closed...");
+	};
+
+	clients[i].onmessage = function(evt) {
+		console.log("Some data received...", evt.data);
+	};
+
+	clients[i].onerror = function(error) {
+	  console.log("Error " + error.message);
+	};
+}
+
+
+for(var i = 0; i < clientsCount; i++){
+	// console.log('Create client #' + i);
+	createClient(i);
+}
+ 
+</script>
