@@ -23,5 +23,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 _(Nothing yet)_
 
 ## License
-Copyright (c) 2015 Alexander Emelyanov  
+Copyright © 2015 Alexander Emelyanov  
 Licensed under the GNU, GPL, V2.0 licenses.
