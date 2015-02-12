@@ -10,9 +10,9 @@ var raatOpts = {port: optPort, prefix: optPrefix};
 new Raat(raatOpts);
 
 var clients = [], i = 0;
-var testSize = 10000;
+var testSize = 100000;
 
-var RaatClient = function(){
+var RaatClient = function(i){
     var ws;
     ws = new WebSocket('ws://127.0.0.1:8002/raat/websocket');
     ws.on('open', function() {
@@ -25,8 +25,8 @@ var RaatClient = function(){
         console.log('CLIENT: Connection closed');
     });
     ws.on('error', function(err) {
-        console.log('CLIENT: %s', err);
-        // throw err;
+        console.log('CLIENT: #%s %s', i, err);
+        throw err;
     });
 };
 
@@ -34,9 +34,11 @@ function createNewClient(){
     if (i++ >= testSize){
         return;
     }
-    var raatClient = new RaatClient();
+    var raatClient = new RaatClient(i);
     clients.push(raatClient);
-    console.log('Create client #' + i);
+    if (!(i % 1000)) {
+        console.log('Create client #' + i);
+    }
     setTimeout(createNewClient, 1);
 }
 
