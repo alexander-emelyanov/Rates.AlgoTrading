@@ -12,13 +12,13 @@ new Raat(raatOpts);
 // Run clients
 
 var clients = [], i = 0;
-var testSize = 100000;
+var testSize = 11000;
 
 var RaatClient = function(i){
     var ws;
     ws = new WebSocket('ws://127.0.0.1:' + optPort + '/' + optPrefix + '/websocket');
     ws.on('open', function() {
-        ws.send('Current time: ' + process.hrtime());
+        // ws.send();
     });
     ws.on('message', function(msg) {
         console.log('CLIENT: Received: %s', msg);
