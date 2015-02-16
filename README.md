@@ -1,6 +1,6 @@
 # Rates.AlgoTrading [![Build Status](https://secure.travis-ci.org/alexander-emelyanov/Rates.AlgoTrading.png?branch=master)](http://travis-ci.org/alexander-emelyanov/Rates.AlgoTrading)[![Dependencies](https://img.shields.io/david/alexander-emelyanov/Rates.AlgoTrading.svg?style=flat-square)](https://david-dm.org/alexander-emelyanov/Rates.AlgoTrading) [![devDependency Status](https://david-dm.org/alexander-emelyanov/Rates.AlgoTrading/dev-status.svg)](https://david-dm.org/alexander-emelyanov/Rates.AlgoTrading#info=devDependencies)
 
-Source of exchange rates for algorithmic trade systems.
+Source of exchange rates for algorithmic trade systems
 
 ## Getting Started
 Install the module with: `npm install Rates.AlgoTrading` (npm package not registered on npmjs.com, coming soon...)
