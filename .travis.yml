@@ -6,6 +6,6 @@ node_js:
 env:
   - DB=postgresql
 before_script:
-  - npm install -g grunt-cli
+  - npm install -g grunt-cli && sudo -u postgres psql -c "CREATE DATABASE raat;" && sudo -u postgres psql -c "CREATE USER raat_user WITH password 'Jnm43dUJs';" && sudo -u postgres psql -c "GRANT ALL privileges ON DATABASE raat TO raat_user;"
 services:
   - redis-server
