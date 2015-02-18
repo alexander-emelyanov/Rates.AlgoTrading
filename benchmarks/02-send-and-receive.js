@@ -10,7 +10,7 @@ var raatOpts = {port: optPort, prefix: optPrefix};
 new Raat(raatOpts);
 
 // Raat clients
-var testSize = 3;
+var testSize = 100;
 
 var RaatClient = function(opts){
 
@@ -64,9 +64,17 @@ var consumer = new RaatClient({
         console.log('Consumer received a message', messageObject);
     }
 });
-//consumer.subscribe('rates:EURUSD');
+
+// Grabber #1
 new RaatClient({onOpen: function(raatClient){
     for(var i = 0; i < testSize; i++){
         raatClient.sendMessage('EUR\\USD', {rate: Math.random()});
+    }
+}});
+
+// Grabber #2
+new RaatClient({onOpen: function(raatClient){
+    for(var i = 0; i < testSize; i++){
+        raatClient.sendMessage('EUR\\USD', {type: 'tick', rate: Math.random(), created_at: (new Date).toISOString()});
     }
 }});
