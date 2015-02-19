@@ -5,6 +5,7 @@ node_js:
   - '0.12'
 env:
   - DB=postgresql
+  - DATABASE_URL=pg://raat_user:JnmdUJsxHn3@localhost:5432/raat
 before_script:
   - npm install -g grunt-cli
     && sudo -u postgres psql -c "CREATE DATABASE raat;"
