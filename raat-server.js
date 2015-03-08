@@ -4,4 +4,4 @@ console.log("RAAT loaded");
 
 var raatConfiguration = {};
 
-var raatInstance = new Raat(raatConfiguration);
+new Raat(raatConfiguration);
