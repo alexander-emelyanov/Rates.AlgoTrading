@@ -35,7 +35,7 @@
   },
   "keywords": [],
   "dependencies": {
-    "express": "~4.11.2",
+    "express": "~4.12.2",
     "nconf": "^0.7.1",
     "node-internal-pubsub": "^1.0.1",
     "node-pg-migrate": "0.0.7",
